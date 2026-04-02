@@ -699,6 +699,107 @@
   .mural-item-texto { font-size: 0.88rem; color: var(--cinza-medio); line-height: 1.5; }
   .mural-vazio { text-align: center; padding: 30px; color: #bbb; font-size: 0.9rem; }
 
+
+  /* ===== RESPONSIVIDADE MOBILE ===== */
+  @media (max-width: 768px) {
+
+    /* Hero */
+    .hero-main { padding: 30px 20px 36px; }
+    .hero-top-row { flex-direction: column; gap: 18px; align-items: flex-start; }
+    .logo-escola { width: 80px; height: 80px; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero-sub { font-size: 0.95rem; }
+    .hero-escola { margin-top: 24px; padding-top: 18px; }
+
+    /* Nav */
+    .nav-container { padding: 0; }
+    .nav-btn { padding: 12px 10px; font-size: 0.75rem; }
+    .nav-arrow { width: 26px; font-size: 1rem; }
+
+    /* Busca */
+    .busca-wrapper { padding: 12px 14px 0; }
+    .busca-input { font-size: 0.88rem; }
+
+    /* Main */
+    main { padding: 24px 14px 60px; }
+
+    /* Intro grid */
+    .intro-grid { grid-template-columns: 1fr; gap: 12px; }
+    .intro-card { padding: 20px 18px; }
+
+    /* Equipamentos */
+    .recursos-equip { grid-template-columns: 1fr; gap: 12px; }
+
+    /* Disc header */
+    .disc-header { gap: 12px; margin-bottom: 18px; }
+    .disc-emoji { font-size: 2.2rem; }
+    .disc-header h2 { font-size: 1.5rem; }
+
+    /* Botões de seção */
+    .btn-imprimir,
+    .btn-agendar-secao { font-size: 0.8rem; padding: 8px 16px; }
+    div[style*="display:flex;gap:12px"] { flex-direction: column; gap: 8px; }
+
+    /* Recurso card */
+    .recurso-card {
+      grid-template-columns: 1fr;
+      padding: 16px;
+      gap: 10px;
+    }
+    .recurso-tipo { align-self: flex-start; }
+    .recurso-nome { font-size: 0.95rem; }
+    .recurso-desc { font-size: 0.84rem; }
+    .recurso-rodape { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .recurso-acoes { gap: 8px; }
+    .seta { display: none; }
+
+    /* BNCC block */
+    .bncc-block { padding: 24px 18px; }
+    .bncc-block h2 { font-size: 1.2rem; }
+    .bncc-pillars { gap: 8px; }
+    .pillar { font-size: 0.8rem; padding: 6px 14px; }
+
+    /* Section title */
+    .section-title { font-size: 1.3rem; }
+
+    /* Atividade box */
+    .atividade-box { padding: 20px 18px; }
+
+    /* Agendar */
+    .agendar-box { padding: 22px 18px; }
+    .agendar-box h3 { font-size: 1.1rem; }
+    .step { gap: 10px; }
+    .step-num { width: 28px; height: 28px; min-width: 28px; font-size: 0.8rem; }
+
+    /* Mural */
+    .mural-section { padding: 20px 16px; }
+    .mural-form input,
+    .mural-form select,
+    .mural-form textarea { font-size: 0.88rem; padding: 9px 12px; }
+    .mural-btn-enviar { align-self: stretch; text-align: center; }
+
+    /* Botão agendamento hero card */
+    .intro-card a[href*="vercel"] {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* Footer */
+    footer { padding: 28px 16px; font-size: 0.8rem; }
+    .footer-bandeira { margin-bottom: 14px; }
+
+    /* Busca resultados */
+    .busca-resultados { padding: 14px 14px 0; }
+  }
+
+  @media (max-width: 400px) {
+    .hero h1 { font-size: 1.5rem; }
+    .nav-btn { padding: 11px 8px; font-size: 0.7rem; }
+    .disc-header h2 { font-size: 1.3rem; }
+    .bncc-block h2 { font-size: 1.1rem; }
+  }
+
   /* ===== PRINT ===== */
   @media print {
     .nav-wrapper, .hero, .busca-wrapper, .btn-imprimir, .btn-agendar-secao,
