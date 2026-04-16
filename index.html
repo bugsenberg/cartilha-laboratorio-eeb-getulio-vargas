@@ -886,6 +886,52 @@
 
   <!-- APRESENTAÇÃO -->
   <section class="section active" id="apresentacao">
+    <!-- CARD GAME COMENIUS -->
+    <div onclick="window.open('https://gamecomenius.ufsc.br/','_blank')" style="
+      background: linear-gradient(135deg, #1a4a1a 0%, #2d7a2d 60%, #3a9a3a 100%);
+      border-radius: 14px;
+      padding: 22px 28px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,80,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    "
+    onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(0,80,0,0.3)'"
+    onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(0,80,0,0.2)'">
+
+      <!-- Padrão decorativo de fundo -->
+      <div style="position:absolute;top:-20px;right:-20px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.05);pointer-events:none;"></div>
+      <div style="position:absolute;bottom:-30px;right:60px;width:80px;height:80px;border-radius:50%;background:rgba(255,209,0,0.08);pointer-events:none;"></div>
+
+      <!-- Ícone -->
+      <div style="font-size:3rem;flex-shrink:0;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.3));">🎮</div>
+
+      <!-- Texto -->
+      <div style="flex:1;position:relative;z-index:1;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <span style="font-size:1.05rem;font-weight:700;color:white;">Game Comenius – UFSC</span>
+          <span style="background:#FFD100;color:#1a1a2e;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:50px;">Novo</span>
+          <span style="background:rgba(255,255,255,0.15);color:white;font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:50px;">UFSC · Florianópolis</span>
+        </div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.82);line-height:1.5;margin-bottom:10px;">
+          Plataforma lúdica de mídia-educação com repositório de jogos testados e analisados por pesquisadores da UFSC. Cada jogo vem com sugestão de uso prática para sala de aula — para todas as disciplinas e etapas.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.85);font-size:0.72rem;padding:3px 10px;border-radius:50px;border:1px solid rgba(255,255,255,0.2);">🎯 Jogos testados</span>
+          <span style="background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.85);font-size:0.72rem;padding:3px 10px;border-radius:50px;border:1px solid rgba(255,255,255,0.2);">📚 Cursos gratuitos</span>
+          <span style="background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.85);font-size:0.72rem;padding:3px 10px;border-radius:50px;border:1px solid rgba(255,255,255,0.2);">🏫 Anos Iniciais ao Médio</span>
+        </div>
+      </div>
+
+      <!-- Seta -->
+      <div style="font-size:1.5rem;color:rgba(255,255,255,0.5);flex-shrink:0;position:relative;z-index:1;">›</div>
+    </div>
+
     <div class="bncc-block">
       <h2>O que é a BNCC da Computação?</h2>
       <p>Em 2023, o Ministério da Educação homologou o <strong>Complemento à BNCC para Computação</strong>, tornando o ensino de tecnologia parte oficial da educação básica brasileira. Isso significa que a computação não é mais uma disciplina isolada: ela <em>atravessa todas as áreas do conhecimento</em>.</p>
@@ -1193,30 +1239,6 @@
           </div>
         </div>
       </div>
-      <div class="recurso-card" id="recurso-gc-1" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-1')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-1')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-1">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-1">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-1',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-1',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-1',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-1',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-1',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="atividade-box">
@@ -1503,30 +1525,6 @@
                 <span class="estrela" onclick="avaliar(event,'recurso-20',3)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-20',4)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-20',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recurso-card" id="recurso-gc-2" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-2')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-2')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-2">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-2">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-2',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-2',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-2',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-2',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-2',5)">☆</span>
               </div>
             </div>
           </div>
@@ -1823,30 +1821,6 @@
           </div>
         </div>
       </div>
-      <div class="recurso-card" id="recurso-gc-3" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-3')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-3')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-3">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-3">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-3',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-3',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-3',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-3',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-3',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="atividade-box">
@@ -2109,30 +2083,6 @@
                 <span class="estrela" onclick="avaliar(event,'recurso-41',3)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-41',4)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-41',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recurso-card" id="recurso-gc-4" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-4')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-4')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-4">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-4">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-4',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-4',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-4',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-4',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-4',5)">☆</span>
               </div>
             </div>
           </div>
@@ -2453,30 +2403,6 @@
           </div>
         </div>
       </div>
-      <div class="recurso-card" id="recurso-gc-5" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-5')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-5')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-5">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-5">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-5',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-5',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-5',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-5',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-5',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="atividade-box">
@@ -2739,30 +2665,6 @@
                 <span class="estrela" onclick="avaliar(event,'recurso-63',3)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-63',4)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-63',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recurso-card" id="recurso-gc-6" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-6')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-6')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-6">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-6">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-6',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-6',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-6',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-6',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-6',5)">☆</span>
               </div>
             </div>
           </div>
@@ -3035,30 +2937,6 @@
           </div>
         </div>
       </div>
-      <div class="recurso-card" id="recurso-gc-7" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-7')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-7')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-7">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-7">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-7',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-7',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-7',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-7',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-7',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="atividade-box">
@@ -3321,30 +3199,6 @@
                 <span class="estrela" onclick="avaliar(event,'recurso-83',3)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-83',4)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-83',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recurso-card" id="recurso-gc-8" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-8')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-8')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-8">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-8">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-8',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-8',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-8',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-8',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-8',5)">☆</span>
               </div>
             </div>
           </div>
@@ -3636,30 +3490,6 @@
                 <span class="estrela" onclick="avaliar(event,'recurso-94',3)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-94',4)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-94',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recurso-card" id="recurso-gc-9" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-9')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-9')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-9">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-9">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-9',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-9',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-9',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-9',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-9',5)">☆</span>
               </div>
             </div>
           </div>
@@ -3980,30 +3810,6 @@
           </div>
         </div>
       </div>
-      <div class="recurso-card" id="recurso-gc-10" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-10')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-10')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-10">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-10">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-10',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-10',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-10',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-10',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-10',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="atividade-box">
@@ -4146,30 +3952,6 @@
                 <span class="estrela" onclick="avaliar(event,'recurso-111',3)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-111',4)">☆</span>
                 <span class="estrela" onclick="avaliar(event,'recurso-111',5)">☆</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recurso-card" id="recurso-gc-11" data-url="https://gamecomenius.ufsc.br/" data-nome="Game Comenius – UFSC" data-desc="Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação." onclick="abrirRecurso(event, 'https://gamecomenius.ufsc.br/', 'recurso-gc-11')">
-        <span class="recurso-tipo tipo-jogo">Jogo Educativo</span>
-        <div class="recurso-body">
-          <div class="recurso-topo">
-            <div class="recurso-nome">Game Comenius – UFSC<span class="badge-novo">Novo</span></div>
-            <button class="btn-fav" onclick="toggleFav(event, 'recurso-gc-11')" title="Favoritar">♡</button>
-          </div>
-          <div class="recurso-desc">Plataforma lúdica de mídia-educação da UFSC com repositório de jogos testados e analisados por pesquisadores. Cada jogo tem sugestão de uso prática para o professor. Também oferece cursos gratuitos de formação docente sobre uso de jogos na educação.</div>
-          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
-          <div class="recurso-rodape">
-            <div class="recurso-link">🔗 gamecomenius.ufsc.br</div>
-            <div class="recurso-acoes">
-              <span class="recurso-contador" id="count-recurso-gc-11">👁 0</span>
-              <div class="estrelas" id="stars-recurso-gc-11">
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-11',1)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-11',2)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-11',3)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-11',4)">☆</span>
-                <span class="estrela" onclick="avaliar(event,'recurso-gc-11',5)">☆</span>
               </div>
             </div>
           </div>
