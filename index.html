@@ -861,6 +861,7 @@
       <button class="nav-btn" onclick="showSection('religioso', this)">🙏 Ens. Religioso</button>
       <button class="nav-btn" onclick="showSection('sociologia', this)">🔭 Sociologia</button>
       <button class="nav-btn" onclick="showSection('filosofia', this)">💭 Filosofia</button>
+      <button class="nav-btn" onclick="showSection('inclusao', this)">♿ Ed. Especial</button>
       <button class="nav-btn" onclick="showSection('favoritos', this)">❤️ Favoritos</button>
       <button class="nav-btn" onclick="showSection('agendar', this)">📅 Agendar</button>
     </nav>
@@ -3991,6 +3992,260 @@
 
     <div class="bncc-conn">
       🔗 <strong>Conexão BNCC Computação:</strong> Pesquisa e produção de argumentos filosóficos em ambiente digital desenvolve Mundo Digital (uso crítico de fontes online) e Cultura Digital (comunicação responsável, ética digital e pensamento crítico sobre informação).
+    </div>
+  </section>
+
+
+  <!-- EDUCAÇÃO ESPECIAL E INCLUSIVA -->
+  <section class="section" id="inclusao">
+    <div class="disc-header">
+      <div class="disc-emoji">♿</div>
+      <div>
+        <h2>Educação Especial e Inclusiva</h2>
+        <p>Tecnologias assistivas e recursos pedagógicos para uma escola mais acessível para todos.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px;">
+      <button class="btn-imprimir" onclick="imprimirSecao('inclusao')">🖨️ Imprimir esta seção</button>
+    </div>
+
+    <div class="recursos-list">
+
+      <div class="recurso-card" id="recurso-inc-1" data-url="https://vlibras.gov.br/" data-nome="VLibras – Tradutor de Libras" data-desc="Suíte gratuita do governo federal que traduz automaticamente textos, vídeos e páginas da web do português para Libras. Disponível como extensão de navegador, aplicativo para celular e plugin para sites. Essencial para alunos com deficiência auditiva." onclick="abrirRecurso(event, 'https://vlibras.gov.br/', 'recurso-inc-1')">
+        <span class="recurso-tipo tipo-ferramenta">Tecnologia Assistiva</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">VLibras – Tradutor de Libras<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-1')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Suíte gratuita do governo federal que traduz automaticamente textos, vídeos e páginas da web do português para Libras. Disponível como extensão de navegador, aplicativo para celular e plugin para sites. Essencial para alunos com deficiência auditiva.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 vlibras.gov.br</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-1">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-1">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-1',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-1',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-1',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-1',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-1',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-2" data-url="https://www.handtalk.me/" data-nome="Hand Talk – Intérprete Digital de Libras" data-desc="Aplicativo que converte textos, imagens e áudios para Libras por meio do personagem virtual Hugo. Muito usado em escolas para tornar conteúdos acessíveis a alunos surdos. Funciona no celular e no computador." onclick="abrirRecurso(event, 'https://www.handtalk.me/', 'recurso-inc-2')">
+        <span class="recurso-tipo tipo-ferramenta">Tecnologia Assistiva</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">Hand Talk – Intérprete Digital de Libras<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-2')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Aplicativo que converte textos, imagens e áudios para Libras por meio do personagem virtual Hugo. Muito usado em escolas para tornar conteúdos acessíveis a alunos surdos. Funciona no celular e no computador.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 handtalk.me</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-2">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-2">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-2',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-2',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-2',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-2',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-2',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-3" data-url="http://intervox.nce.ufrj.br/dosvox/" data-nome="DOSVOX – Computação para Deficientes Visuais" data-desc="Sistema desenvolvido pela UFRJ que permite a alunos com deficiência visual usar o computador de forma autônoma por meio de síntese de voz em português. Inclui editor de texto, acesso à internet, jogos sonoros e muito mais. Gratuito." onclick="abrirRecurso(event, 'http://intervox.nce.ufrj.br/dosvox/', 'recurso-inc-3')">
+        <span class="recurso-tipo tipo-ferramenta">Tecnologia Assistiva</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">DOSVOX – Computação para Deficientes Visuais<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-3')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Sistema desenvolvido pela UFRJ que permite a alunos com deficiência visual usar o computador de forma autônoma por meio de síntese de voz em português. Inclui editor de texto, acesso à internet, jogos sonoros e muito mais. Gratuito.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 intervox.nce.ufrj.br/dosvox</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-3">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-3">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-3',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-3',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-3',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-3',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-3',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-4" data-url="https://www.nvaccess.org/" data-nome="NVDA – Leitor de Tela Gratuito" data-desc="Leitor de tela gratuito para Windows que converte todo o conteúdo da tela em voz, permitindo que alunos com deficiência visual naveguem na internet, usem editores de texto e participem das atividades digitais com autonomia." onclick="abrirRecurso(event, 'https://www.nvaccess.org/', 'recurso-inc-4')">
+        <span class="recurso-tipo tipo-ferramenta">Tecnologia Assistiva</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">NVDA – Leitor de Tela Gratuito<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-4')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Leitor de tela gratuito para Windows que converte todo o conteúdo da tela em voz, permitindo que alunos com deficiência visual naveguem na internet, usem editores de texto e participem das atividades digitais com autonomia.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 nvaccess.org</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-4">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-4">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-4',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-4',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-4',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-4',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-4',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-5" data-url="https://araboard.es/" data-nome="AraBoard – Pranchas de Comunicação Alternativa" data-desc="Software gratuito para criar pranchas de comunicação alternativa personalizadas com imagens, sons e cores. Muito usado com alunos com autismo, paralisia cerebral e outros quadros que afetam a comunicação verbal. Funciona no computador e tablet." onclick="abrirRecurso(event, 'https://araboard.es/', 'recurso-inc-5')">
+        <span class="recurso-tipo tipo-simulador">Comunicação Alternativa</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">AraBoard – Pranchas de Comunicação Alternativa<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-5')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Software gratuito para criar pranchas de comunicação alternativa personalizadas com imagens, sons e cores. Muito usado com alunos com autismo, paralisia cerebral e outros quadros que afetam a comunicação verbal. Funciona no computador e tablet.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 araboard.es</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-5">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-5">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-5',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-5',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-5',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-5',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-5',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-6" data-url="https://cta.ifrs.edu.br/retace/" data-nome="RETACE – Repositório de Tecnologia Assistiva do IFRS" data-desc="Repositório gratuito do Instituto Federal do Rio Grande do Sul com leitores de tela, ampliadores, softwares de comunicação alternativa, tradutores para Libras e muito mais — todos testados em contexto educacional, com tutoriais e manuais em português." onclick="abrirRecurso(event, 'https://cta.ifrs.edu.br/retace/', 'recurso-inc-6')">
+        <span class="recurso-tipo tipo-site">Repositório</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">RETACE – Repositório de Tecnologia Assistiva do IFRS<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-6')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Repositório gratuito do Instituto Federal do Rio Grande do Sul com leitores de tela, ampliadores, softwares de comunicação alternativa, tradutores para Libras e muito mais — todos testados em contexto educacional, com tutoriais e manuais em português.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 cta.ifrs.edu.br/retace</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-6">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-6">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-6',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-6',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-6',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-6',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-6',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-7" data-url="https://diversa.org.br/" data-nome="DIVERSA – Instituto Rodrigo Mendes" data-desc="Portal de referência nacional em educação inclusiva com artigos, práticas pedagógicas, vídeos, estudos e recursos baseados no Desenho Universal para a Aprendizagem (DUA). Excelente para formação e planejamento de aulas inclusivas." onclick="abrirRecurso(event, 'https://diversa.org.br/', 'recurso-inc-7')">
+        <span class="recurso-tipo tipo-site">Portal Educacional</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">DIVERSA – Instituto Rodrigo Mendes<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-7')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Portal de referência nacional em educação inclusiva com artigos, práticas pedagógicas, vídeos, estudos e recursos baseados no Desenho Universal para a Aprendizagem (DUA). Excelente para formação e planejamento de aulas inclusivas.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 diversa.org.br</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-7">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-7">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-7',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-7',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-7',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-7',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-7',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-8" data-url="https://www.livox.com.br/" data-nome="Livox – Comunicação para Pessoas com Deficiência" data-desc="Aplicativo brasileiro de comunicação alternativa com mais de 7.000 símbolos, voz sintetizada e inteligência artificial. Amplamente utilizado com alunos com autismo, paralisia cerebral e outras condições. Disponível para tablet e celular." onclick="abrirRecurso(event, 'https://www.livox.com.br/', 'recurso-inc-8')">
+        <span class="recurso-tipo tipo-simulador">Comunicação Alternativa</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">Livox – Comunicação para Pessoas com Deficiência<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-8')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Aplicativo brasileiro de comunicação alternativa com mais de 7.000 símbolos, voz sintetizada e inteligência artificial. Amplamente utilizado com alunos com autismo, paralisia cerebral e outras condições. Disponível para tablet e celular.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 livox.com.br</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-8">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-8">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-8',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-8',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-8',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-8',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-8',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recurso-card" id="recurso-inc-9" data-url="https://institutoitard.com.br/" data-nome="Instituto Itard – Educação Inclusiva" data-desc="Portal com cursos, artigos e materiais gratuitos para professores do AEE e educação inclusiva. Aborda autismo, deficiência intelectual, comunicação alternativa e tecnologia assistiva de forma prática e acessível." onclick="abrirRecurso(event, 'https://institutoitard.com.br/', 'recurso-inc-9')">
+        <span class="recurso-tipo tipo-site">Formação Docente</span>
+        <div class="recurso-body">
+          <div class="recurso-topo">
+            <div class="recurso-nome">Instituto Itard – Educação Inclusiva<span class="badge-novo">Novo</span></div>
+            <button class="btn-fav" onclick="toggleFav(event, 'recurso-inc-9')" title="Favoritar">♡</button>
+          </div>
+          <div class="recurso-desc">Portal com cursos, artigos e materiais gratuitos para professores do AEE e educação inclusiva. Aborda autismo, deficiência intelectual, comunicação alternativa e tecnologia assistiva de forma prática e acessível.</div>
+          <div class="recurso-etapas"><span class="etapa-tag">Anos Iniciais</span><span class="etapa-tag">Anos Finais</span><span class="etapa-tag">Ensino Médio</span></div>
+          <div class="recurso-rodape">
+            <div class="recurso-link">🔗 institutoitard.com.br</div>
+            <div class="recurso-acoes">
+              <span class="recurso-contador" id="count-recurso-inc-9">👁 0</span>
+              <div class="estrelas" id="stars-recurso-inc-9">
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-9',1)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-9',2)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-9',3)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-9',4)">☆</span>
+                <span class="estrela" onclick="avaliar(event,'recurso-inc-9',5)">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="atividade-box">
+      <h3>💡 Sugestão de Atividade</h3>
+      <p><strong>Aula Acessível com VLibras + Canva:</strong> O professor projeta o conteúdo da aula em slides criados no Canva. Com a extensão VLibras ativada no navegador, o conteúdo em texto é traduzido automaticamente para Libras na tela. Alunos surdos acompanham em Libras enquanto os demais acompanham o texto e a fala do professor — promovendo inclusão real sem separar os alunos.</p>
+    </div>
+
+    <div class="bncc-conn">
+      🔗 <strong>Conexão BNCC Computação:</strong> O uso de tecnologias assistivas desenvolve Cultura Digital (uso ético e inclusivo da tecnologia) e Mundo Digital (compreensão de que o ambiente digital deve ser acessível a todos). Também articula com os princípios do Desenho Universal para a Aprendizagem (DUA) previstos nas diretrizes de educação inclusiva brasileira.
     </div>
   </section>
 
